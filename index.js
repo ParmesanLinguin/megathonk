@@ -32,6 +32,7 @@ delete require.cache[require.resolve('./events/message')];
 client.on('error', () => {});
 client.on('ready', () => {
     client.user.setPresence({game: {type: 3, name: 'MNN'}});
+    log(`Ready! Bot's on ${client.guilds.size} guilds for ${client.users.size} users`)
 });
 
 client.login(tokens.discord)

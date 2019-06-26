@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "prefix": "🤔 ",
+    "mottos": [
+        "better late than never",
+        "'news'.replace('new', 'old')",
+        "just monkey business?",
+        "even children write better than this...",
+        "this just in: we're closing tomorrow",
+        "hack week is kinda meh ngl",
+        "if you are seeing this, please wake up. you're in a coma, and we have tried a new way of communicating with you. please, come home. we love you."
+    ],
+    "directory_EXAMPLE": "defaults to ~/torch/char-rnn/",
+    "directory": "~/torch/char-rnn/",
+    "checkpoint_EXAMPLE": "depends on checkpoint, looks something like cv/lm_lstm_epoch0.38_2.0164.t7",
+    "checkpoint": "oldcv/lm_lstm_epoch9.00_1.3215.t7"
+}
