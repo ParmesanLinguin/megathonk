@@ -23,8 +23,10 @@ module.exports = {
                 }
             } else {
                 msg.channel.send('Sucessfully fetched changes. Exiting... \n\
-                    *Please note if you didn\'t run the bot through the startup script it will not automatically reboot.*');
-                process.exit(0);
+                    *Please note if you didn\'t run the bot through the startup script it will not automatically reboot.*').then(
+                        process.exit(0)
+                    );
+                
             }
         }) 
 
