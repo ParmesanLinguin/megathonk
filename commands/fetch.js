@@ -16,11 +16,7 @@ module.exports = {
             if (stderr || err) {
                 msg.channel.send('Something went wrong while fetching changes. I have sent you the error log.')
                 client.log('git fetch failed.', true);
-                if (stderr) {
-                    msg.author.send('stderr:' + stderr + '\n\nerr:' + err).catch(
-                        msg.author.send('The error message had exceeded 2000 characters.')
-                    )
-                }
+                msg.author.send('stderr:' + stderr + '\n\nerr:' + err).catch(msg.author.send('The error message had exceeded 2000 characters.'))
             } else {
                 msg.channel.send('Sucessfully fetched changes. Exiting... \n\
                     *Please note if you didn\'t run the bot through the startup script it will not automatically reboot.*').then(
