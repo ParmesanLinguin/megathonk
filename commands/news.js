@@ -30,7 +30,7 @@ module.exports = {
                 }
                 m.edit(new Discord.RichEmbed()
                     .setTitle('BREAKING NEWS!')
-                    .setDescription(stdout.replace(/(.*?--------------------------)/gs))
+                    .setDescription(stdout.replace(/(.*?--------------------------)/gs).replace(/undefined/g, ''))
                     .setTimestamp(Date.now())
                     .setFooter('MegaThonk News Network - ' + motto)
                 )
