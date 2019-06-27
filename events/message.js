@@ -25,7 +25,6 @@ module.exports = (client, msg) => {
     const prefix = client.config.prefix;
 
     // if the message doesn't include the prefix at the start, return
-    console.log(msg.content)
     if (msg.content.toLowerCase().indexOf(prefix) != 0) return;
 
     // find the arguments of the message
