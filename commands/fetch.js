@@ -9,12 +9,12 @@ module.exports = {
         // I only added this so that I could update the bot easier.
         // feel free to remove it or modify the git remote.
         
-        msg.channel.send('Attempting to fetch latest changes...');
+        msg.channel.send('Attempting to fetch latest changes...')
         client.log('Fetching changes');
 
         exec('git init && git fetch', (stderr, stdout, err) => {
             if (stderr || err) {
-                m.edit('Something went wrong while fetching changes. I have sent you the error log.')
+                msg.channel.send('Something went wrong while fetching changes. I have sent you the error log.')
                 client.log('git fetch failed.', true);
                 if (stderr) {
                     msg.author.send('stderr:' + stderr + '\n\nerr:' + err).catch(
