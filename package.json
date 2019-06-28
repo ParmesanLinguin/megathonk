@@ -2,7 +2,7 @@
     "name": "megathonk",
     "author": "Parmesan Linguine",
     "description": "For Discord Hack Week 2019",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "main": "index.js",
     "dependencies": {
         "discord.js": "^11.5.1"

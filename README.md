@@ -56,7 +56,7 @@ $ npm install
 
 ### Config
 
-You'll need to set `directory` and `checkpoint` to a checkpoint. The bot is automatically configured to use the one provided in the repo, but if you're up to it you can train your own neural net and then change the settings here.
+You'll need to set `directory` and `checkpoint` to a checkpoint. The bot is configured to use checkpoint.t7, which can be downloaded [here](https://megathonk.parm.dev/checkpoint.t7). Simply drag it into your bot installation directory and you're good to go!
 
 Before you run it, you will also need to make a tokens.json file and put your token in it. If you don't know how to get a token [this](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token) should help.
 

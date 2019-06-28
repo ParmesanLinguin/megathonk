@@ -1,5 +1,5 @@
 {
-    "version": "0.3.0",
+    "version": "1.0.0",
     "prefix": "🤔 ",
     "mottos": [
         "better late than never",
@@ -12,8 +12,8 @@
         "1st place has never seemed so far away",
         "undefined\nsike defined"
     ],
-    "directory_EXAMPLE": "defaults to ~/torch/char-rnn/",
+    "directory_EXAMPLE": "char-rnn installation directory. defaults to ~/torch/char-rnn/",
     "directory": "~/torch/char-rnn/",
-    "checkpoint_EXAMPLE": "depends on checkpoint, looks something like cv/lm_lstm_epoch0.38_2.0164.t7",
-    "checkpoint": "oldcv/lm_lstm_epoch9.00_1.3215.t7"
+    "checkpoint_EXAMPLE": "path to training checkpoint.",
+    "checkpoint": "./checkpoint.t7"
 }

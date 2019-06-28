@@ -23,7 +23,7 @@ module.exports = {
                 primetext = `-primetext "${args.join(' ')} "`
             }
             // execute the command and get the result
-            exec(`cd ${client.config.directory} && th sample.lua -length 1000 -gpuid -1 -seed ${Math.floor(Math.random() * 295838)} ${primetext} ${client.config.checkpoint}`, (err, stdout, stderr) => {
+            exec(`th ${client.config.directory}/sample.lua -length 1000 -gpuid -1 -seed ${Math.floor(Math.random() * 295838)} ${primetext} ${client.config.checkpoint}`, (err, stdout, stderr) => {
                 if (stderr || err) {
                     m.edit('Actually, scratch that. No news here!')
                     return client.log('oof', true);
